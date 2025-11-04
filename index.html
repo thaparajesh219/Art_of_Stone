@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiva Shilp Kala – Handcrafted Stone Art from Nepal</title>
+    <meta name="description" content="Discover exquisite, handcrafted stone sculptures by Nepali artist Shiva Shilp Kala. Specializing in divine figures and custom memorial art, carved with devotion." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'stone-gray': '#4a4a4a',
+              'stone-light': '#f5f5f5',
+              'gold-light': '#d4af37',
+              'gold-dark': '#b8860b',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-poppins bg-stone-light text-stone-gray flex flex-col min-h-screen">
+
+    <header class="bg-stone-gray shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex-shrink-0">
+            <a href="index.html" class="text-gold-light text-xl font-bold">
+              Shiva Shilp Kala
+            </a>
+          </div>
+          <nav class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="index.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+              <a href="about.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">About</a>
+              <a href="gallery.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+              <a href="contact.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+          </nav>
+          <div class="-mr-2 flex md:hidden">
+            <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:hidden" id="mobile-menu">
+        <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+          <a href="about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+          <a href="gallery.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+          <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow animate-fadeIn">
+      <section 
+        class="relative h-[60vh] md:h-[80vh] bg-cover bg-center flex items-center justify-center text-white" 
+        style="background-image: url('https://picsum.photos/1600/900?image=1043')"
+      >
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center p-4">
+          <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">
+            Shiva Shilp Kala
+          </h1>
+          <p class="mt-4 text-xl md:text-2xl drop-shadow-md">
+            Handcrafted Stone Art from Nepal
+          </p>
+        </div>
+      </section>
+
+      <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-stone-gray mb-4">Carved with Devotion</h2>
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+            With over 25 years of experience, Shiva Shilp Kala brings ancient Nepali traditions to life. Each sculpture is meticulously handcrafted, not just as a piece of art, but as a vessel of emotion and spirituality. Discover the timeless beauty of handmade stone art.
+          </p>
+          <a 
+            href="contact.html" 
+            class="inline-block bg-gold-dark text-white font-bold py-3 px-8 rounded-lg hover:bg-gold-light transition-transform transform hover:scale-105 duration-300"
+          >
+            Order Your Custom Sculpture
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-stone-gray text-white text-center p-4 mt-auto">
+      <p class="text-sm">
+        © 2025 Shiva Shilp Kala | Handcrafted Stone Art & Memorial Sculptures from Nepal.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

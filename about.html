@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About the Artist | Shiva Shilp Kala</title>
+    <meta name="description" content="Learn about the artist behind Shiva Shilp Kala, their journey from a childhood passion to a master craftsman of Nepali stone art." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'stone-gray': '#4a4a4a',
+              'stone-light': '#f5f5f5',
+              'gold-light': '#d4af37',
+              'gold-dark': '#b8860b',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-poppins bg-stone-light text-stone-gray flex flex-col min-h-screen">
+
+    <header class="bg-stone-gray shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex-shrink-0">
+            <a href="index.html" class="text-gold-light text-xl font-bold">
+              Shiva Shilp Kala
+            </a>
+          </div>
+          <nav class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="index.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+              <a href="about.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">About</a>
+              <a href="gallery.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
+              <a href="contact.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+          </nav>
+          <div class="-mr-2 flex md:hidden">
+            <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:hidden" id="mobile-menu">
+        <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+          <a href="about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+          <a href="gallery.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+          <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+        <div class="bg-white py-12 md:py-20 px-4 sm:px-6 lg:px-8 animate-fadeIn">
+            <div class="max-w-7xl mx-auto">
+              <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold tracking-tight text-stone-gray sm:text-5xl">The Artist's Journey</h1>
+                <p class="mt-4 text-xl text-gray-600">From Passion to Profession</p>
+              </div>
+      
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                  <h2 class="text-3xl font-semibold text-stone-gray mb-4">A Legacy in Stone</h2>
+                  <p class="text-gray-700 leading-relaxed mb-4">
+                    The story of Shiva Shilp Kala begins in the heart of Nepal, where a childhood fascination with the shapes and textures of river stones grew into a lifelong passion. What started as a simple hobby of carving small figures for family and friends has blossomed into a professional craft, honed over 25 years of dedicated practice.
+                  </p>
+                  <p class="text-gray-700 leading-relaxed">
+                    Every chisel mark is a testament to this journey, blending traditional Nepali techniques with a personal touch that captures profound emotion.
+                  </p>
+                </div>
+                <div class="order-1 md:order-2">
+                  <img 
+                    src="https://picsum.photos/600/400?image=24" 
+                    alt="Artist at work" 
+                    class="rounded-lg shadow-xl w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
+      
+              <div class="mt-20 text-center">
+                  <h2 class="text-3xl font-semibold text-stone-gray mb-4">More Than Art, a Memory in Stone</h2>
+                  <p class="max-w-3xl mx-auto text-gray-700 leading-relaxed">
+                    Each creation is an intimate dialogue between the artist and the stone. For memorial sculptures, this connection runs deeper. We understand that these are not just statues; they are tributes to loved ones, tangible memories carved with empathy and respect. The goal is to create a piece that not only honors a life but also brings a sense of peace and remembrance to those left behind.
+                  </p>
+              </div>
+            </div>
+          </div>
+    </main>
+
+    <footer class="bg-stone-gray text-white text-center p-4 mt-auto">
+      <p class="text-sm">
+        © 2025 Shiva Shilp Kala | Handcrafted Stone Art & Memorial Sculptures from Nepal.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
