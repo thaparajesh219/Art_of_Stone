@@ -1,118 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-934LTZYTPN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-934LTZYTPN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-934LTZYTPN');
+  </script>
 
-  gtag('config', 'G-934LTZYTPN');
-</script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sculpture Art – Handcrafted Stone Art from Nepal</title>
-    <meta name="description" content="Discover exquisite, handcrafted stone sculptures from Nepal. Specializing in divine figures and custom memorial art, carved with devotion." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              'poppins': ['Poppins', 'sans-serif'],
-            },
-            colors: {
-              'stone-gray': '#4a4a4a',
-              'stone-light': '#f5f5f5',
-              'gold-light': '#d4af37',
-              'gold-dark': '#b8860b',
-            }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sculpture Art – Handcrafted Stone Art from Nepal</title>
+  <meta name="description" content="Discover exquisite, handcrafted stone sculptures from Nepal. Specializing in divine figures and custom memorial art, carved with devotion." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Tailwind + Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'stone-gray': '#4a4a4a',
+            'stone-light': '#f5f5f5',
+            'gold-light': '#d4af37',
+            'gold-dark': '#b8860b',
           }
         }
       }
-    </script>
+    }
+  </script>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease-out;
+    }
+  </style>
 </head>
+
 <body class="font-poppins bg-stone-light text-stone-gray flex flex-col min-h-screen">
 
-    <header class="bg-stone-gray shadow-md sticky top-0 z-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex-shrink-0">
-            <a href="index.html" class="text-gold-light text-xl font-bold">
-              Sculpture Art
+  <!-- HEADER -->
+  <header class="bg-stone-gray shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="text-gold-light text-xl font-bold">Sculpture Art</a>
+
+        <nav class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="index.html" class="relative text-white hover:text-gold-light transition px-3 py-2 rounded-md text-sm font-medium group">
+              Home
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-light transition-all group-hover:w-full"></span>
+            </a>
+            <a href="about.html" class="relative text-white hover:text-gold-light transition px-3 py-2 rounded-md text-sm font-medium group">
+              About
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-light transition-all group-hover:w-full"></span>
+            </a>
+            <a href="gallery.html" class="relative text-white hover:text-gold-light transition px-3 py-2 rounded-md text-sm font-medium group">
+              Gallery
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-light transition-all group-hover:w-full"></span>
+            </a>
+            <a href="contact.html" class="relative text-white hover:text-gold-light transition px-3 py-2 rounded-md text-sm font-medium group">
+              Contact
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gold-light transition-all group-hover:w-full"></span>
             </a>
           </div>
-          <nav class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <a href="index.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-              <a href="about.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">About</a>
-              <a href="gallery.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
-              <a href="contact.html" class="text-white hover:text-gold-light transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-            </div>
-          </nav>
-          <div class="-mr-2 flex md:hidden">
-            <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+        </nav>
+
+        <div class="-mr-2 flex md:hidden">
+          <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden md:hidden" id="mobile-menu">
+      <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="index.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Home</a>
+        <a href="about.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">About</a>
+        <a href="gallery.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Gallery</a>
+        <a href="contact.html" class="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section 
+    class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" 
+    style="background-image: url('https://i.ibb.co/Zzgn5w6b/Untitled-design-2.png')"
+  >
+    <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-transparent"></div>
+    <div class="relative z-10 text-center p-4 animate-fadeInUp">
+      <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow-xl tracking-wide">
+        Sculpture Art
+      </h1>
+      <p class="mt-4 text-xl md:text-2xl drop-shadow-md text-gold-light font-light">
+        Handcrafted Stone Art from Nepal
+      </p>
+      <a 
+        href="contact.html" 
+        class="mt-8 inline-block bg-gold-dark text-white font-semibold py-3 px-8 rounded-lg hover:bg-gold-light transition-transform transform hover:scale-110 duration-300 shadow-lg"
+      >
+        Order Your Custom Sculpture
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="py-16 px-4 md:px-8 bg-white animate-fadeInUp">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-stone-gray mb-4">Carved with Devotion</h2>
+      <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+        With over 25 years of experience, our studio brings ancient Nepali traditions to life. Each sculpture is meticulously handcrafted, not just as a piece of art, but as a vessel of emotion and spirituality. Discover the timeless beauty of handmade stone art.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURED SCULPTURES -->
+  <section class="py-16 bg-stone-light">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-stone-gray mb-8">Featured Sculptures</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+          <img src="https://i.ibb.co/J7n3zYb/statue1.jpg" alt="Stone Buddha" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Stone Buddha</h3>
+            <p class="text-gray-600 text-sm mt-2">Carved from pure sandstone in Patan.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+          <img src="https://i.ibb.co/FYcfpFZ/statue2.jpg" alt="Ganesh Sculpture" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Lord Ganesh</h3>
+            <p class="text-gray-600 text-sm mt-2">Symbol of wisdom and prosperity.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition">
+          <img src="https://i.ibb.co/t8M1s9h/statue3.jpg" alt="Memorial Art" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Memorial Sculpture</h3>
+            <p class="text-gray-600 text-sm mt-2">Custom hand-carved remembrance art.</p>
           </div>
         </div>
       </div>
-      <div class="hidden md:hidden" id="mobile-menu">
-        <nav class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-          <a href="about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-          <a href="gallery.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
-          <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-        </nav>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-stone-gray mb-10">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-stone-light p-6 rounded-lg shadow-md">
+          <p class="text-gray-700 italic">"Absolutely stunning craftsmanship! The details are divine."</p>
+          <h3 class="mt-4 font-semibold text-gold-dark">– Priya Sharma</h3>
+        </div>
+        <div class="bg-stone-light p-6 rounded-lg shadow-md">
+          <p class="text-gray-700 italic">"A perfect memorial piece. It brings us peace every day."</p>
+          <h3 class="mt-4 font-semibold text-gold-dark">– David Collins</h3>
+        </div>
+        <div class="bg-stone-light p-6 rounded-lg shadow-md">
+          <p class="text-gray-700 italic">"Art that speaks from the soul. Worth every moment of wait."</p>
+          <h3 class="mt-4 font-semibold text-gold-dark">– Anisha Gurung</h3>
+        </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <main class="flex-grow">
-      <section 
-        class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" 
-        style="background-image: url('https://i.ibb.co/Zzgn5w6b/Untitled-design-2.png')"
-      >
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative z-10 text-center p-4">
-          <h1 class="text-4xl md:text-6xl font-bold drop-shadow-lg">
-            Sculpture Art
-          </h1>
-          <p class="mt-4 text-xl md:text-2xl drop-shadow-md">
-            Handcrafted Stone Art from Nepal
-          </p>
-          <a 
-            href="contact.html" 
-            class="mt-8 inline-block bg-gold-dark text-white font-bold py-3 px-8 rounded-lg hover:bg-gold-light transition-transform transform hover:scale-105 duration-300"
-          >
-            Order Your Custom Sculpture
-          </a>
-        </div>
-      </section>
+  <!-- FOOTER -->
+  <footer class="bg-stone-gray text-white text-center py-8 mt-auto">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="#" class="hover:text-gold-light transition"><i class="fab fa-facebook text-2xl"></i></a>
+      <a href="#" class="hover:text-gold-light transition"><i class="fab fa-instagram text-2xl"></i></a>
+      <a href="#" class="hover:text-gold-light transition"><i class="fab fa-whatsapp text-2xl"></i></a>
+    </div>
+    <p class="text-sm">© 2025 Sculpture Art | Handcrafted Stone Art & Memorial Sculptures from Nepal.</p>
+  </footer>
 
-      <section class="py-16 px-4 md:px-8 bg-white animate-fadeIn">
-        <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl font-bold text-stone-gray mb-4">Carved with Devotion</h2>
-          <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-            With over 25 years of experience, our studio brings ancient Nepali traditions to life. Each sculpture is meticulously handcrafted, not just as a piece of art, but as a vessel of emotion and spirituality. Discover the timeless beauty of handmade stone art.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="bg-stone-gray text-white text-center p-4 mt-auto">
-      <p class="text-sm">
-        © 2025 Sculpture Art | Handcrafted Stone Art & Memorial Sculptures from Nepal.
-      </p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
